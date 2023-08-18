@@ -35,6 +35,7 @@
     border: none;
     outline: none;
     background-color: lightgray;
+    margin-left: 5px;
 }
 
 .navber__search-input::placeholder{
@@ -43,6 +44,7 @@
 
 .icon{
     color: #999;
+    margin-right: 5px;
 }
 
 .navber__right{
@@ -59,12 +61,17 @@
 }
 
 @media screen and (max-width: 650px){
+    .navber__search-input{
+        width: 160px;
+        /* margin-left: 15px; */
+    }
+
     .navbar__cont{
         padding: 10px;
     }
 
     .navber__search{
-        gap: 5px;
+        gap: 0px;
     }
 
     .navber__right{

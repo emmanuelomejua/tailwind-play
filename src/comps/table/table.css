@@ -1,0 +1,36 @@
+table{
+    width: 100%;
+    padding: 10px 20px;
+}
+
+.thead{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px;
+    background-color: green;
+    border-radius: 10px 10px 0 0;
+}
+
+.thead__key-child{
+    display: flex;
+    color: white;
+    gap: 10px;
+}
+
+.thead__key{
+    color: white;
+}
+
+.tbody{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 5px;
+}
+
+.thead__key-child1{
+    display: flex;
+    gap: 15px;
+    padding: 0px 10px;
+}
