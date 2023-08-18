@@ -17,12 +17,12 @@ const Form = () => {
 
         <div className='form__input-left'>
         <div className='form__cont'>
-             <input type='text' placeholder=''/>
-             <input type='text' placeholder=''/>
+             <input type='text' placeholder='First Name'/>
+             <input type='text' placeholder='Last Name'/>
 
-             <div>
-              <input type='text' placeholder=''/>
-              <input type='text' placeholder=''/>
+             <div className='form__cont-sec'>
+              <input type='number' placeholder='Age' className='inputs2' min={1}/>
+              <input type='number' placeholder='Height' className='inputs2' min={1}/>
              </div>
 
             </div>

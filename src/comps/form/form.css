@@ -31,6 +31,7 @@
 .form__input{
     display: flex;
     background-color: #999;
+    justify-content: space-between;
 }
 
 .form__input-right{
@@ -49,5 +50,30 @@
     padding: 10px;
     display: flex;
     flex-direction: column;
+    gap: 10px;
 } 
 
+.form__cont > input{
+    padding: 10px;
+    outline: none;
+    border-radius: 10px;
+    border: none;
+    background-color: #000000;
+    color: gray;
+}
+
+.form__cont-sec{
+    display: flex;
+    width: 100%;
+    gap: 20px;
+}
+
+.inputs2{
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    border-radius: 10px;
+    border: none;
+    color: gray;
+    background-color: #000000;
+}
