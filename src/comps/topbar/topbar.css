@@ -1,0 +1,29 @@
+.navbar{
+    background-color: #fff;
+    display: flex;
+    height: 60px;
+    width: 100%;
+}
+
+.navbar__cont{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px;
+}
+
+.logo{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+}
+
+.navber__search{
+    display: flex;
+    border: 1px solid gray;
+}
+
+.navber__right{
+    display: flex;
+    gap: 15px;
+}
