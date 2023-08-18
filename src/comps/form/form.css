@@ -1,0 +1,53 @@
+.form{
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.progress{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin:  0 10%;
+}
+
+.progress > progress{
+    width: 80%;
+    height: 1rem;
+    padding: 0px 10px;
+}
+
+.progress > label{
+    justify-content: center;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.form__input{
+    display: flex;
+    background-color: #999;
+}
+
+.form__input-right{
+    flex: 2;
+    padding: 10px;
+    border: 1px solid gray;
+    border-radius: 10px;
+}
+
+.form__input-left{
+    flex: 3;
+    padding: 10px;
+}
+
+.form__cont{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+} 
+
