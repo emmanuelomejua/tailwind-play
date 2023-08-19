@@ -1,6 +1,7 @@
 import Form from '../../comps/form/Form'
 import Table from '../../comps/table/Table'
 import Image from '../../comps/image/Image'
+import Ability from '../../comps/ability/Ability'
 import './home.css'
 
 const Home = () => {
@@ -9,6 +10,7 @@ const Home = () => {
      <Image/>
      <Form/>
      <Table/>
+     <Ability />
     </main>
   )
 }
