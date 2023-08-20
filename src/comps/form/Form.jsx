@@ -1,6 +1,11 @@
 import './form.css'
 
-const Form = () => {
+const Form = ({players}) => {
+
+
+
+
+  console.log(players)
   return (
     <form className='form'>
       <section className='progress'>

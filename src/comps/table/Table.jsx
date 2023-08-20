@@ -1,6 +1,11 @@
+import { data } from '../ability/data'
 import './table.css'
 
-const Table = () => {
+const Table = ({players}) => {
+
+  console.log(players.data[0].first_name)
+
+
   return (
     <table>
       <thead>
@@ -20,71 +25,30 @@ const Table = () => {
       </thead>
 
       <tbody>
-      <tr className='tbody'>
+
+        
+ 
+        {
+            players.data?.slice(0, 5).map((player) => (
+
+      <tr className='tbody' key={players.data._id}>
+
             <section>
-                <td>Player 1</td>
+                <td>{player.first_name}  {player.last_name}</td>
             </section>
 
             <section className='thead__key-child1'>
-                <td>23</td>
-                <td>75</td>
-                <td>45</td>
-                <td>30</td>
-                <td>90</td>
+                <td>{player.Pacing}</td>
+                <td>{player.Shooting}</td>
+                <td>{player.Passing}</td>
+                <td>{player.Defending}</td>
+                <td>{player.Physicality}</td>
             </section>
         </tr>
-      <tr className='tbody'>
-            <section>
-                <td>Player 1</td>
-            </section>
+            ))
+        }
 
-            <section className='thead__key-child1'>
-                <td>23</td>
-                <td>75</td>
-                <td>45</td>
-                <td>30</td>
-                <td>90</td>
-            </section>
-        </tr>
-      <tr className='tbody'>
-            <section>
-                <td>Player 1</td>
-            </section>
 
-            <section className='thead__key-child1'>
-                <td>23</td>
-                <td>75</td>
-                <td>45</td>
-                <td>30</td>
-                <td>90</td>
-            </section>
-        </tr>
-      <tr className='tbody'>
-            <section>
-                <td>Player 1</td>
-            </section>
-
-            <section className='thead__key-child1'>
-                <td>23</td>
-                <td>75</td>
-                <td>45</td>
-                <td>30</td>
-                <td>90</td>
-            </section>
-        </tr>
-      <tr className='tbody'>
-            <section>
-                <td>Player 1</td>
-            </section>
-
-            <section className='thead__key-child1'>
-                <td>23</td>
-                <td>75</td>
-                <td>45</td>
-                <td>30</td>
-                <td>90</td>
-            </section>
-        </tr>
 
       </tbody>
     </table>

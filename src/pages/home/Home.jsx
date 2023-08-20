@@ -27,12 +27,12 @@ const Home = () => {
     }
   }, [url])
 
-  console.log(players)
+  
   return (
     <main className='home'>
      <Image/>
      <Form players={players}/>
-     <Table/>
+     <Table players={players}/>
      <Ability />
     </main>
   )

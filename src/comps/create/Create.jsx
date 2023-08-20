@@ -35,7 +35,7 @@ const Create = () => {
                'Content-Type': 'application/json'
               }
             })
-            res.data()
+            res.data() 
 
             console.log(res.data)
         } catch (error) {
