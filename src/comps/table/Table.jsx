@@ -1,9 +1,9 @@
-import { data } from '../ability/data'
+
 import './table.css'
 
 const Table = ({players}) => {
 
-  console.log(players.data[0].first_name)
+
 
 
   return (
