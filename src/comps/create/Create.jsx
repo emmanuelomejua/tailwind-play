@@ -29,7 +29,8 @@ const Create = () => {
               first_name,
               last_name,
               email,
-              nin
+              nin,
+              
             }, {
               headers: {
                'Content-Type': 'application/json'

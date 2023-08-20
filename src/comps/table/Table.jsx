@@ -29,7 +29,7 @@ const Table = ({players}) => {
         
  
         {
-            players.data?.slice(0, 5).map((player) => (
+            players?.data?.slice(0, 5).map((player) => (
 
       <tr className='tbody' key={players.data._id}>
 
