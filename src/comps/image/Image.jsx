@@ -1,11 +1,11 @@
 import './image.css'
-import Img from '../../constants/player.jpg'
+import avater from '../../constants/haaland.jpg'
 
 const Image = () => {
   return (
     <section className="image">
         <section className="image_cont">
-          <img src={Img} alt="" className="image_cont-img" />
+          <img src={avater} alt="" className="image_cont-img" />
 
             <div className="">
                 
