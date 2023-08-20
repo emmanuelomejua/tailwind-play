@@ -2,8 +2,8 @@ import './update.css'
 
 const Update = () => {
   return (
-    <main>
-    
+    <main className='update'>
+      <h3>Coming soon!!!</h3>
     </main>
   )
 }
