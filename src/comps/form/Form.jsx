@@ -2,13 +2,13 @@ import './form.css'
 
 const Form = () => {
   return (
-    <main className='form'>
-      <div className='progress'>
+    <form className='form'>
+      <section className='progress'>
         <label htmlFor='id'>
           <p>34%</p>
         </label>
         <progress id='id' value={34} max={100}/>
-      </div>
+      </section>
   
       <section className='form__input'>
         <div className='form__input-right'>
@@ -29,7 +29,7 @@ const Form = () => {
         </div>
       </section>
 
-    </main>
+    </form>
   )
 }
 

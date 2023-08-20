@@ -1,9 +1,10 @@
 import './create.css'
+import Form from '../../comps/form/Form'
 
 const Create = () => {
   return (
-    <main>
-      Create
+    <main className='create'>
+      <Form/>
     </main>
   )
 }
