@@ -34,7 +34,7 @@ const Table = ({players}) => {
       <tr className='tbody' key={players.data._id}>
 
             <section>
-                <td>{player.first_name}  {player.last_name}</td>
+                <td id='t'>{player.first_name}  {player.last_name}</td>
             </section>
 
             <section className='thead__key-child1'>

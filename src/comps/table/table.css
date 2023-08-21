@@ -12,6 +12,7 @@ table{
     border-radius: 10px 10px 0 0;
 }
 
+
 .thead__key-child{
     display: flex;
     color: white;
@@ -33,4 +34,11 @@ table{
     display: flex;
     gap: 25px;
     padding: 0px 10px;
+}
+
+@media screen and (max-width: 650px){
+    #t{
+        font-size: 12px;
+        font-weight: 500;
+    }    
 }

@@ -1,18 +1,19 @@
 import './form.css'
 
-const Form = ({players}) => {
+const Form = () => {
 
 
 
 
-  console.log(players)
+  
   return (
     <form className='form'>
       <section className='progress'>
         <label htmlFor='id'>
           <p>34%</p>
         </label>
-        <progress id='id' value={34} max={100}/>
+        <input type='range' id='id' value={34} max={100} />
+       
       </section>
   
       <section className='form__input'>
