@@ -9,8 +9,7 @@ import axios from 'axios'
 const Home = () => {
 
   const [players, setPlayers] = useState([])
-
-  
+  const [id, setId] = useState('')
 
   const url = `http://skoutwatch-dev-api.eu-west-3.elasticbeanstalk.com/api/v1/players?per_page=${5}`
 
@@ -30,9 +29,9 @@ const Home = () => {
   
   return (
     <main className='home'>
-     <Image/>
+     <Image players={players} id={id}/>
      <Form players={players}/>
-     <Table players={players}/>
+     <Table players={players} setId={setId}/>
      <Ability />
     </main>
   )

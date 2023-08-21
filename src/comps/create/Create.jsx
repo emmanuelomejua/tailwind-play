@@ -8,6 +8,14 @@ const Create = () => {
 
     const [range, setRange] = useState(0)
 
+  const [attributes, setAttribute] = useState([
+    {
+
+      "attribute": "Dribbling",
+      "score": 50
+    }
+])
+
     const [file, setFile] = useState('')
 
     const [values, setValues] = useState({
@@ -30,6 +38,12 @@ const Create = () => {
               last_name,
               email,
               nin,
+              attribute: [
+                {
+                    "attribute": "Dribbling",
+                    "score": 50
+                }
+              ]
               
             }, {
               headers: {

@@ -1,9 +1,9 @@
 
 import './table.css'
 
-const Table = ({players}) => {
+const Table = ({players, setId}) => {
 
-
+console.log(players)
 
 
   return (
@@ -32,7 +32,7 @@ const Table = ({players}) => {
         {
             players?.data?.slice(0, 5).map((player) => (
 
-      <tr className='tbody' key={players.data._id}>
+      <tr onClick={() => setId(player?.id)} className='tbody' key={player.id}>
 
             <section>
                 <td id='t'>{player.first_name}  {player.last_name}</td>
