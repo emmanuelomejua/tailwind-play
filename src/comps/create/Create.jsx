@@ -6,14 +6,33 @@ const Create = () => {
     
   const url = 'http://skoutwatch-dev-api.eu-west-3.elasticbeanstalk.com/api/v1/players'
 
-    const [range, setRange] = useState(0)
 
+  
   const [attributes, setAttribute] = useState([
     {
-
-      "attribute": "Dribbling",
-      "score": 50
-    }
+      attribute: 'Dribbling',
+      score: ''
+    },
+    {
+      attribute: 'Pacing',
+      score: ''
+    },
+    {
+      attribute: 'Shooting',
+      score: ''
+    },
+    {
+      attribute: 'Passing',
+      score: ''
+    },
+    {
+      attribute: 'Defending',
+      score: ''
+    },
+    {
+      attribute: 'Physicality',
+      score: ''
+    },
 ])
 
     const [file, setFile] = useState('')
@@ -29,28 +48,30 @@ const Create = () => {
         setValues({...values, [e.target.name]: e.target.value})
     }
 
+    const handleAttrChange = (e) => {
+      setAttribute({...attributes, [e.target.name]: e.target.value})
+    }
+
+    console.log(attributes)
+
     const handleFormSubmit = async (e) => {
       e.preventDefault()
      const {first_name, last_name, email, nin} = values
+     const { Dribbling, Pacing, Shooting, Passing, Defending, Physicality } = attributes
         try {
             const res = await axios.post(url, {
               first_name,
               last_name,
               email,
               nin,
-              attribute: [
-                {
-                    "attribute": "Dribbling",
-                    "score": 50
-                }
-              ]
+    
               
             }, {
               headers: {
                'Content-Type': 'application/json'
               }
             })
-            res.data() 
+            res.data && window.location.replace('/')
 
             console.log(res.data)
         } catch (error) {
@@ -58,15 +79,15 @@ const Create = () => {
         }
     }
 
-    console.log(values, range)
+
   return (
     <form className='form' onSubmit={handleFormSubmit}>
     <section className='progress'>
-        <label htmlFor='id'>
+        <label htmlFor='Dribbling'>
           <p>Dribbling</p>
-          <p>{range}%</p>
+          <span>67</span>
         </label>
-        <input type='range' id='id' max={100} min={0} value={range} onChange={(e)=>setRange(e.target.value)}/>
+
       </section>
   
       <section className='form__input'>

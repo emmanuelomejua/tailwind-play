@@ -33,7 +33,7 @@ const Image = ({ players, id }) => {
               <p className='right1'>{player.first_name}  {player.last_name}</p>
 
               <div className='left1'>
-               <span>50</span>
+               <span>{player.Dribbling}</span>
                 <div ></div>
               </div>
             </div>
