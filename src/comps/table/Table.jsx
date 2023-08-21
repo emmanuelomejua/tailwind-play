@@ -17,6 +17,7 @@ const Table = ({players}) => {
             <section className='thead__key-child'>
                 <td>Pac</td>
                 <td>Sho</td>
+                <td>Dri</td>
                 <td>Pas</td>
                 <td>Def</td>
                 <td>Phy</td>
@@ -40,6 +41,7 @@ const Table = ({players}) => {
             <section className='thead__key-child1'>
                 <td>{player.Pacing}</td>
                 <td>{player.Shooting}</td>
+                <td>{player.Dribbling}</td>
                 <td>{player.Passing}</td>
                 <td>{player.Defending}</td>
                 <td>{player.Physicality}</td>

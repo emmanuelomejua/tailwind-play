@@ -3,15 +3,88 @@
     justify-content: center;
     align-items: center;
     margin-top: 50px;
+    position: relative;
 }
 
 .image_cont-img{
-    width: 260;
+    width: 500px;
     height: 400px;
     object-fit: cover;
     cursor: pointer;
+    position: relative;
 }
 
+.name{
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    right: 35%;
+    top: 25%;
+}
+
+.right1{
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: rgb(167, 130, 61);
+}
+
+.left1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+
+.left1 > span{
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: rgb(167, 130, 61);
+}
+
+.left1 > div{
+    height: 50px;
+    width: 50px;
+    background-color: #fff;
+    border-radius: 5px;
+
+}
+
+.box{
+    display: flex;
+    width: 240px;
+    flex-direction: column;
+    position: absolute;
+    bottom: 25%;
+    right: 40%;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.box__cont{
+    display: flex;
+    justify-content: space-between;
+    color: #000000;
+}
+
+.right, .left{
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    margin: 10px 5px;
+}
+
+.btn{
+    padding: 10px;
+    border: none;
+    background-color: green;
+    color: #fff;
+    border-radius: 10px;
+    font-weight: 600;
+    cursor: pointer;
+    margin: 10px 5px;
+}
 
 @media screen and (max-width: 650px){
     .image_cont-img{

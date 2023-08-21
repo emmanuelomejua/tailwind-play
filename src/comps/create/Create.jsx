@@ -49,6 +49,7 @@ const Create = () => {
     <form className='form' onSubmit={handleFormSubmit}>
     <section className='progress'>
         <label htmlFor='id'>
+          <p>Dribbling</p>
           <p>{range}%</p>
         </label>
         <input type='range' id='id' max={100} min={0} value={range} onChange={(e)=>setRange(e.target.value)}/>

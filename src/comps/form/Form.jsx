@@ -10,9 +10,9 @@ const Form = () => {
     <form className='form'>
       <section className='progress'>
         <label htmlFor='id'>
-          <p>34%</p>
+          <p className='p'>34%</p>
         </label>
-        <input type='range' id='id' value={34} max={100} />
+        <input type='range' id='id' value={34} max={100} className='attribute'/>
        
       </section>
   

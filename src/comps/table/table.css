@@ -36,6 +36,11 @@ table{
     padding: 0px 10px;
 }
 
+#t{
+    font-size: 14px;
+    font-weight: 600;
+}   
+
 @media screen and (max-width: 650px){
     #t{
         font-size: 12px;
